@@ -1,13 +1,23 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
 
- /* designing the newsletter section */
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Manrope";
-  }
+/* removing default styling of li items */
+li {
+  list-style: none;
+}
 
- button {
+/* removing the default decoration of a tags */
+a {
+  text-decoration: none;
+}
+
+/* giving default design to every button */
+button {
   background: #6663e9;
   border: none;
   border-radius: 30px;
@@ -23,7 +33,7 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assests/11 Feb 2023/Real Estate/Photos/mainBackground.png");
+    url("./Photos/mainBackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,11 +45,11 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 25px 0;
 }
 
- nav img {
+nav img {
   height: 45px;
   width: 120px;
 }
@@ -71,7 +81,7 @@ header div h1 {
   margin-bottom: 30px;
 }
 
- header div p {
+header div p {
   font-size: 18px;
   margin-bottom: 30px;
   font-weight: 500;
@@ -96,7 +106,8 @@ header div h1 {
   height: 38px;
 }
 
- .cards-wrapper-section h1 {
+/* designing the wrapper section of the cards */
+.cards-wrapper-section h1 {
   font-weight: 800;
   font-size: 60px;
   text-align: center;
@@ -123,7 +134,8 @@ header div h1 {
   position: relative;
 }
 
- .cards-wrapper div:nth-child(2) {
+/* giving different margin top value to position cards */
+.cards-wrapper div:nth-child(2) {
   margin-top: 50px;
 }
 .cards-wrapper div:nth-child(3) {
@@ -144,8 +156,7 @@ header div h1 {
 .cards-wrapper div:nth-child(8) {
   margin-top: 100px;
 }
-
- .cards-wrapper div:nth-child(9) {
+.cards-wrapper div:nth-child(9) {
   margin-top: 160px;
 }
 
@@ -168,9 +179,8 @@ header div h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
-  
+
 .card-box button {
   font-weight: 800;
   font-size: 15px;
@@ -191,28 +201,27 @@ header div h1 {
   text-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
 }
 
+/* designing both the features section of the website */
+.features-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+}
 
- designing both the features section of the website */
-  .features-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 250px;
-  }
-  
-  .features-section div {
-    width: 50%;
-  }
-  
-  .first-feature-section div:first-child img:first-child {
-    position: absolute;
-    left: -80px;
-    z-index: -1;
-    width: 726px;
-    height: 456px;
-  }
+.features-section div {
+  width: 50%;
+}
 
- .features-section div:first-child img:last-child {
+.first-feature-section div:first-child img:first-child {
+  position: absolute;
+  left: -80px;
+  z-index: -1;
+  width: 726px;
+  height: 456px;
+}
+
+.features-section div:first-child img:last-child {
   position: relative;
   width: 405px;
   height: 405px;
@@ -235,9 +244,8 @@ header div h1 {
   color: #585c65;
   margin-bottom: 40px;
   max-width: 80%;
-
 }
-  
+
 .features-section button {
   font-weight: 700;
 }
@@ -257,7 +265,7 @@ header div h1 {
     position: relative;
 }
 
- .second-feature-section div:last-child img:first-child {
+.second-feature-section div:last-child img:first-child {
   position: absolute;
   right: 0;
   width: 726px;
@@ -282,7 +290,8 @@ header div h1 {
   width: 90%;
 }
 
- .newsletter {
+/* designing the newsletter section */
+.newsletter {
   margin: 100px 70px;
   background: #6663e9;
   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
@@ -313,43 +322,40 @@ header div h1 {
   display: flex;
   align-items: center;
   gap: 20px;
-  }
-  
-  .newsletter form div {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: #5654d1;
-    border-radius: 40px;
-    width: 468px;
-    height: 61px;
-    padding: 0 20px;
-  }
-  
-  .newsletter form input {
-    background-color: transparent;
-    border: none;
-  }
-  
-  .newsletter form button {
-    background: #ffffff;
-    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
-    border-radius: 40px;
-    width: 174px;
-    height: 61px;
-    color: #6663e9;
-  }
+}
 
+.newsletter form div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #5654d1;
+  border-radius: 40px;
+  width: 468px;
+  height: 61px;
+  padding: 0 20px;
+}
 
+.newsletter form input {
+  background-color: transparent;
+  border: none;
+}
 
+.newsletter form button {
+  background: #ffffff;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  width: 174px;
+  height: 61px;
+  color: #6663e9;
+}
 
-
+/* designing the footer area */
 footer {
   display: flex;
   align-items: flex-start;
   margin: 0 100px;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 footer div:first-child {
@@ -374,23 +380,28 @@ footer div:first-child p {
   font-size: 20px;
 }
 
+/* designing the footer links */
 .footer-links {
-  display:flex;
+  display: flex;
   align-items: flex-start;
-  gap:120px;
   justify-content: space-between;
+  gap: 120px;
 }
-.footer-links-content{
+
+.footer-links-content {
   display: flex;
   flex-direction: column;
 }
-.footer-links ul li{
-  color:black;
-  font-weight: 700;
-  font-size:20px;
-  
-}
-.footer-links ul p{
-  margin-bottom: 25px;
 
+.footer-links-content ul li a {
+  color: black;
+}
+
+.footer-links-content ul li:first-child {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-links-content ul li{
+    margin-bottom: 25px;
 }
